@@ -678,7 +678,6 @@
           var calEl = cal.get(0);
           var options = cal.data('datepicker');
           
-          var test = options.onBeforeShow.apply(this, [calEl]);
           if(options.onBeforeShow.apply(this, [calEl]) == false) {
             return;
           }
