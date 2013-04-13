@@ -931,6 +931,7 @@
             
             if (shiftTo) {
               options.current = new Date(options.mode != 'single' ? options.date[0] : options.date);
+              options.lastSel = false;
             }
             fill(cal.get(0));
           }
@@ -969,6 +970,7 @@
             } else {
               options.date = [];
             }
+            options.lastSel = false;
             fill(cal.get(0));
           }
         });
