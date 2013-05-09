@@ -349,8 +349,8 @@
             if (today.getDate() == date.getDate() && today.getMonth() == date.getMonth() && today.getYear() == date.getYear()) {
               data.weeks[indic].days[indic2].classname.push('datepickerToday');
             }
-            if($.isArray(options.selectableDates) && options.selectableDates.length == 2) {
-              if(date < options.selectableDates[0] || date > options.selectableDates[1]) {
+            if ($.isArray(options.selectableDates) && options.selectableDates.length == 2) {
+              if (date < options.selectableDates[0] || date > options.selectableDates[1]) {
                 data.weeks[indic].days[indic2].classname.push('datepickerFuture');
                 data.weeks[indic].days[indic2].classname.push('datepickerDisabled');
               }
